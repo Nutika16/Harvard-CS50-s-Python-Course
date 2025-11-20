@@ -1,8 +1,10 @@
-# 📘 CS50 Python – Introduction & First Program
+# 📘 CS50 Python – Introduction TO PROGRAMMING IN PYTON NOTES
 
 ## 📝 Summary
 
-In this section, I wrote my first Python program and learned about basic functions, user input, arguments, bugs, and side effects. These concepts form the foundation for everything that comes next in Python programming.
+These notes provide a structured and technically detailed overview of the concepts covered in the CS50 Python course.  
+They are written to serve as a clear reference for anyone revisiting foundational Python topics, offering concise explanations, definitions, examples, and key insights.  
+The goal is to create a comprehensive resource that supports learning, revision, and practical understanding of Python programming principles, regardless of prior experience level.
 
 ---
 
