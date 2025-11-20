@@ -20,10 +20,10 @@ print("Hello, world!")
 
 ### 2. Arguments
 
-Arguments are the values we pass into a function.
-In print("Hello"), the argument is "Hello".
-Arguments are written inside the parentheses of a function.
-They can be:
+- Arguments are the values we pass into a function.
+- In print("Hello"), the argument is "Hello".
+- Arguments are written inside the parentheses of a function.
+- They can be:
 
 - Strings
 - Numbers
@@ -32,9 +32,9 @@ They can be:
 
 ### 3. 🔍 Bugs
 
-No matter how experienced a programmer is, mistakes will happen.
-These mistakes are called **bugs**.
-Bugs can occur due to:
+- No matter how experienced a programmer is, mistakes will happen.
+- These mistakes are called **bugs**.
+- Bugs can occur due to:
 
 - Wrong arguments
 - Wrong syntax
@@ -42,7 +42,7 @@ Bugs can occur due to:
 
 ### 4. Side Effects
 
-A **side effect** is something a function does outside of returning a value.
+- A **side effect** is something a function does outside of returning a value.
 
 Example:
 
@@ -50,7 +50,7 @@ Example:
 - Writing to a file
 - Sending data to a server
 
-The print() function is a perfect example of a function whose purpose is a side effect: showing text on the screen.
+- The print() function is a perfect example of a function whose purpose is a side effect: showing text on the screen.
 
 ### 5. input() Function
 
