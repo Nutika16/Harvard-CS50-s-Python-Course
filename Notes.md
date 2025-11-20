@@ -142,7 +142,33 @@ print("You are " + str(age))
 - Useful for debugging
 - Good practice in professional codebases
 
-### 9. Pseudocode
+### 9. Multiple Statements
+
+- We can assign multiple variables and print them together.
+
+```python
+name = input("Name: ")
+city = input("City: ")
+
+print("Hello,", name)
+print("You live in", city)
+```
+
+- This introduces the idea of writing programs with multiple inputs and multiple operations.
+
+\*_Important_
+
+- When using concatenation ("Hello, " + name), we must add spaces ourselves.
+- But when we separate items with commas in print():
+
+```python
+print("Hello,", name)
+```
+
+- Python automatically inserts a space between them.
+- This makes comma-separated printing cleaner and safer than manual string concatenation.
+
+### 10. Pseudocode
 
 Pseudocode is a **plain-language outline** of what a program should do before writing the actual code.  
 It is not real code — just a step-by-step description of the logic.
