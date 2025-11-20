@@ -17,3 +17,64 @@ In this section, I wrote my first Python program and learned about basic functio
 ```python
 print("Hello, world!")
 ```
+
+2. Arguments
+   Arguments are the values we pass into a function.
+
+In print("Hello"), the argument is "Hello".
+
+Arguments are written inside the parentheses of a function.
+
+They can be:
+
+Strings
+
+Numbers
+
+Variables
+
+Expressions
+
+🔍 Bugs
+No matter how experienced a programmer is, mistakes will happen.
+
+These mistakes are called bugs.
+
+Bugs can occur due to:
+
+Wrong arguments
+
+Wrong syntax
+
+Logical mistakes
+
+3. Side Effects
+   A side effect is something a function does outside of returning a value.
+
+Example:
+
+Printing to the screen
+
+Writing to a file
+
+Sending data to a server
+
+The print() function is a perfect example of a function whose purpose is a side effect: showing text on the screen.
+
+4. input() Function
+   The input() function is used to take input from the user.
+
+The value typed by the user is always received as a string.
+
+We can pass a prompt as an argument inside input().
+
+Example:
+name = input("What is your name? ")
+print("Hello, " + name)
+
+📌 Points to Remember so far.
+
+1. print() shows output → side effect.
+2. input() collects user input → argument is the question prompt.
+3. Bugs are normal in coding; they help us learn.
+4. Python functions are powerful and rely heavily on arguments.
