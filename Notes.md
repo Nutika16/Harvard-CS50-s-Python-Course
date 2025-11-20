@@ -20,7 +20,8 @@ print("Hello, world!")
 
 ### 2. Arguments
 
-- Arguments are the values we pass into a function.
+Arguments are the values we pass into a function.
+
 - In print("Hello"), the argument is "Hello".
 - Arguments are written inside the parentheses of a function.
 - They can be:
@@ -32,8 +33,9 @@ print("Hello, world!")
 
 ### 3. 🔍 Bugs
 
-- No matter how experienced a programmer is, mistakes will happen.
-- These mistakes are called **bugs**.
+No matter how experienced a programmer is, mistakes will happen.
+These mistakes are called **bugs**.
+
 - Bugs can occur due to:
 
 - Wrong arguments
