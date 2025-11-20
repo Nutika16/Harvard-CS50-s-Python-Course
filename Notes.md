@@ -1,4 +1,4 @@
-# 📘 CS50 Python – Introduction TO PROGRAMMING IN PYTON NOTES
+# 📘 CS50 Python – Introduction TO Programming in Pyton **Notes**
 
 ## 📝 Summary
 
@@ -26,7 +26,7 @@ Arguments are the values we pass into a function.
 
 - In print("Hello"), the argument is "Hello".
 - Arguments are written inside the parentheses of a function.
-- They can be:s
+- They can be:
 - Strings
 - Numbers
 - Variables
@@ -72,3 +72,72 @@ print("Hello, " + name)
 2. input() collects user input → argument is the question prompt.
 3. Bugs are normal in coding; they help us learn.
 4. Python functions are powerful and rely heavily on arguments.
+
+### 6. Variables
+
+A **variable** is a named location in memory that stores a value.  
+In Python, a variable is created automatically when you assign a value to it.
+
+Example:
+
+```python
+name = input("What is your name? ")
+```
+
+Here:
+
+- name → variable
+- = → assignment operator
+- input("What is your name? ") → value stored inside the variable
+
+### Key points about variables:
+
+- They hold data so it can be used later.
+- The value of a variable can change (hence the name “variable”).
+- Variables should have meaningful names for readability.
+
+### 7. String Concatenation
+
+Since input() always returns a string, combining it with another string is called concatenation.
+Example:
+
+```python
+print("Hello, " + name)
+```
+
+Python joins the two strings into:
+Hello, <user_input>
+
+### Important:
+
+If you try to add a string and an integer without converting, Python will show a TypeError.
+
+**Example (❌ wrong):**
+
+```python
+print("You are " + age)
+```
+
+**Example (✔ correct):**
+
+```python
+print("You are " + str(age))
+```
+
+### 8. Comments in Python
+
+- Comments help document your code for yourself and others.
+- Python ignores comments during execution.
+
+### Single line comment
+
+```python
+# This is a comment
+```
+
+### Why comments matter:
+
+- Improve readability
+- Help explain logic
+- Useful for debugging
+- Good practice in professional codebases
