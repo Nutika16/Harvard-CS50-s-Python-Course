@@ -141,3 +141,24 @@ print("You are " + str(age))
 - Help explain logic
 - Useful for debugging
 - Good practice in professional codebases
+
+### 9. Pseudocode
+
+Pseudocode is a **plain-language outline** of what a program should do before writing the actual code.  
+It is not real code — just a step-by-step description of the logic.
+
+Useful for:
+
+- Understanding the flow of a program
+- Planning before coding
+- Reducing bugs by thinking through logic first
+
+Example pseudocode for asking a name and printing a greeting:
+
+- ask user for their name
+- store the name
+- print a greeting using the name
+
+```css
+Pseudocode helps convert ideas → logic → actual Python code.
+```
