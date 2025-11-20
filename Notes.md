@@ -158,14 +158,14 @@ print("You live in", city)
 
 \*_Important_
 
-- When using concatenation ("Hello, " + name), we must add spaces ourselves.
+- When using concatenation ("Hello, " + name), we must add spaces ourselves because the entire expression becomes one single argument.
 - But when we separate items with commas in print():
 
 ```python
 print("Hello,", name)
 ```
 
-- Python automatically inserts a space between them.
+- Python automatically inserts a space between them because each item is treated as a separate argument to the print() function.
 - This makes comma-separated printing cleaner and safer than manual string concatenation.
 
 ### 10. Pseudocode
@@ -188,3 +188,67 @@ Example pseudocode for asking a name and printing a greeting:
 ```css
 Pseudocode helps convert ideas → logic → actual Python code.
 ```
+
+### 11. f-Strings (Formatted Strings)
+
+Another way to combine text and variables is by using **formatted string literals**, also called **f-strings**.
+
+Example:
+
+```python
+name = input("What is your name? ")
+print(f"Hello {name}")
+```
+
+- The f before the string allows us to directly insert variables inside { }.
+- This is cleaner and easier to read than concatenation or comma-separated printing.
+
+### 12. Useful String Functions
+
+Python provides several built-in string functions to clean and format user input.
+
+---
+
+#### `.strip()`
+
+Removes any **leading and trailing whitespace**.
+
+```python
+name = name.strip()
+```
+
+#### .capitalize()
+
+Capitalizes only the first letter of the string.
+
+```python
+name = name.capitalize()
+```
+
+#### .title()
+
+Capitalizes the first letter of every word.
+
+```python
+name = name.title()
+```
+
+### 13. Chaining Methods
+
+String methods can be combined for cleaner and more efficient code.
+
+```python
+name = name.strip().title()
+```
+
+This removes extra spaces and applies proper capitalization in one line.
+
+### 14. Splitting Strings — .split()
+
+.split() breaks a string into multiple parts based on a delimiter (default is space).
+
+```python
+first, last = name.split(" ")
+```
+
+This extracts the first and last name separately.
