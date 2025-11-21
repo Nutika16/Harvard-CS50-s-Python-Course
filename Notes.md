@@ -376,3 +376,38 @@ z = 10.0
 ```
 
 Floats allow Python to represent fractional values, unlike integers which store only whole numbers.
+
+### 21. round() Function
+
+Python provides the built-in round() function to round a floating-point number.
+
+Official Python documentation syntax:
+
+```scss
+round(number[, ndigits])
+```
+
+- The square brackets [] mean optional argument.
+- number → the value to round
+- ndigits → (optional) how many decimal places to round to
+
+Examples:
+Without ndigits (rounds to nearest whole number):
+
+```python
+round(3.6)      # 4
+round(3.2)      # 3
+```
+
+With ndigits (rounds to specific decimal place):
+
+```python
+round(3.14159, 2)   # 3.14
+round(7.856, 1)     # 7.9
+```
+
+ndigits lets us control the precision — for example:
+
+- 1 → tenths
+- 2 → hundredths
+- 0 → tens (python returns float e.g., round(67, -1) rounds to tens place)
