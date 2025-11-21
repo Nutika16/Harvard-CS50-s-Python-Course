@@ -324,3 +324,17 @@ You can find the calculator file here:
 - Display results using `print()`
 
 It serves as a practical way to understand operators and how Python handles number calculations.
+
+### 20. Float
+
+A **float** is a data type used to store numbers with decimal points.
+
+Example:
+
+```python
+x = 3.14
+y = -2.5
+z = 10.0
+```
+
+Floats allow Python to represent fractional values, unlike integers which store only whole numbers.
