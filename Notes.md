@@ -282,3 +282,28 @@ x = 10
 y = 3
 print(x + y, x - y, x * y, x / y, x % y)
 ```
+
+### 17. Interactive Mode (Python Interpreter)
+
+- Python provides an interactive mode (also called the Python REPL(Read, Evaluate , Print , Loop)) where code is interpreted and executed immediately.
+- You can open it by running:
+
+```python
+python
+```
+
+### Features of interactive mode:
+
+- Executes code line by line.
+- Useful for quick tests and trying small expressions.
+- Helps in maintaining continuity when experimenting with values or operations.
+- Example inside interactive mode:
+
+```python
+>>> 2 + 3
+5
+>>> "hello".upper()
+'HELLO'
+```
+
+Interactive mode is often used for quick debugging or checking how Python behaves with certain operations.
