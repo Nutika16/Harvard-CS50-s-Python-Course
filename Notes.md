@@ -307,3 +307,20 @@ python
 ```
 
 Interactive mode is often used for quick debugging or checking how Python behaves with certain operations.
+
+### 18. Simple Calculator Project
+
+- We create a simple calculator program.
+- This project helps reinforce how each operator works (`+`, `-`, `*`, `/`, `%`) and how user input interacts with arithmetic in Python.
+
+You can find the calculator file here:  
+➡️ **[IntroductionToProgramming/Calculator.py](IntroductionToProgramming/Calculator.py)**
+
+### The calculator allows us to:
+
+- Take input from the user
+- Convert the input to integers
+- Perform arithmetic operations
+- Display results using `print()`
+
+It serves as a practical way to understand operators and how Python handles number calculations.
