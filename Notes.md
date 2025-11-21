@@ -252,3 +252,33 @@ first, last = name.split(" ")
 ```
 
 This extracts the first and last name separately.
+
+### 15. Integers (`int`)
+
+`int` is a data type in Python used to represent **whole numbers** (positive, negative, or zero).
+
+Example:
+
+```python
+x = 5
+y = -2
+z = 0
+```
+
+### 16. Integer Operations
+
+In Python, `int` supports several arithmetic operations:
+
+- `+` (addition)
+- `-` (subtraction)
+- `*` (multiplication)
+- `/` (division — always returns float)
+- `%` (modulus — remainder)
+
+Example:
+
+```python
+x = 10
+y = 3
+print(x + y, x - y, x * y, x / y, x % y)
+```
