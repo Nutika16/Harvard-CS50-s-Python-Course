@@ -48,6 +48,7 @@ Code for each major topic will be added as I progress through the course.
 - Solutions to exercises presented in the course
 - Additional practice files for deeper understanding
 - Notes or breakdowns of important concepts (when needed)
+- Self Evaluation Questions as well as answers in different files so you can evaluate youself
 - A final project at the end of the course
 
 All files will be updated regularly as I advance through the course content.
