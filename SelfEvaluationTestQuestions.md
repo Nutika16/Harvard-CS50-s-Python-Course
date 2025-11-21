@@ -1,14 +1,40 @@
-## ✅ SELF-EVALUATION TEST (Basics of Python)
+## 🧠 Self-Assessment Test
 
-Answer these without running Python. If you want, I can check your answers afterward.
+This self-evaluation test covers everything learned so far, including:
 
-### 📌 Part A — Concept Questions
+- print() function
+- Arguments
+- Bugs
+- Side effects
+- input()
+- Variables
+- String concatenation
+- Type conversion
+- Multiple statements (comma vs concatenation)
+- Pseudocode
+- f-strings
+- String methods (strip, capitalize, title)
+- Chaining methods
+- split()
+- Integers
+- Integer operations
+- Interactive mode
+- Simple calculator
+- Floats
+- round() function
 
-1. What is the difference between:
+---
+
+# ✅ SELF-EVALUATION TEST (Basics of Python)
+
+## 📌 Part A — Concept Questions
+
+1. **What is the difference between:**
+
+```python
    print("Hello" + name)
-
-print("Hello", name)
-Explain what happens and why.
+   print("Hello", name)
+```
 
 2. What is a side effect? Give one example from Python.
 3. What is the purpose of the input() function and what data type does it always return?
@@ -20,6 +46,8 @@ Explain what happens and why.
 9. What is the difference between .capitalize() and .title()?
 10. What will .split(" ") do to this string?
     "Aryan Kumar"
+
+---
 
 ### 📌 Part B — Predict the Output
 
@@ -58,19 +86,24 @@ print(first)
 print(last)
 ```
 
+---
+
 ### 📌 Part C — Write the Code
 
 16. Write code to:
-    Ask the user for their name
-    Remove extra spaces
-    Capitalize it properly
-    Print: "Welcome, <name>"
+
+- Ask the user for their name
+- Remove extra spaces
+- Capitalize it properly
+- Print: "Welcome, <name>"
 
 17. Write code to:
-    Ask the user for a number
-    Convert it to an integer
-    Print the number rounded to the nearest whole number using round()
+
+- Ask the user for a number
+- Convert it to an integer
+- Print the number rounded to the nearest whole number using round()
 
 18. Write code to:
-    Take a float from the user
-    Print it rounded to two decimal places using an f-string.
+
+- Take a float from the user
+- Print it rounded to two decimal places using an f-string.
