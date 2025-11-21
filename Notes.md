@@ -203,6 +203,44 @@ print(f"Hello {name}")
 - The f before the string allows us to directly insert variables inside { }.
 - This is cleaner and easier to read than concatenation or comma-separated printing.
 
+#### Additional Formatting with f-Strings
+
+f-strings can also format numbers in different ways.
+**1. Adding commas to large numbers**
+If you have a large integer and want to display it with commas:
+
+```python
+num = 1000000
+print(f"{num:,}")
+```
+
+Output:
+
+```python
+1,000,000
+```
+
+**2. Formatting floating-point numbers**
+You can round a float to a specific number of decimal places using:
+
+```python
+value = 3.14159
+print(f"{value:.2f}")
+```
+
+Explanation:
+
+- .2 → round to 2 decimal places
+- f → format as a floating point number
+
+Output:
+
+```python
+3.14
+```
+
+These formatting options make f-strings very powerful for displaying clean, readable output.
+
 ### 12. Useful String Functions
 
 Python provides several built-in string functions to clean and format user input.
