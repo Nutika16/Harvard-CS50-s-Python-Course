@@ -535,3 +535,42 @@ def test():
 ```
 
 - Using return makes functions more reusable because they can give back values instead of just printing them.
+
+### 25. Conditionals
+
+Conditionals help us make decisions in a program.  
+They allow code to execute **only when certain conditions are true**.
+
+---
+
+#### Comparison Operators
+
+Python provides the following operators to compare values:
+
+- `<` (less than)
+- `>` (greater than)
+- `<=` (less than or equal to)
+- `>=` (greater than or equal to)
+- `==` (equal to)
+- `!=` (not equal to)
+
+These operators are used inside conditional statements.
+
+---
+
+### `if`, `elif`, `else`
+
+- `if` → runs **only when the condition is true**
+- `elif` → runs when the previous conditions were false, but this one is true
+- `else` → runs when **none** of the conditions are true
+
+Basic structure:
+
+```python
+if condition:
+    # code
+elif another_condition:
+    # code
+else:
+    # code
+```
