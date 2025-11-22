@@ -605,3 +605,83 @@ match variable:
 - match → checks the variable
 - case → pattern/value to compare
 - \_ → wildcard (acts like “else”), matches anything
+
+### 27. Loops
+
+Loops allow us to repeat a block of code multiple times without writing it again and again.  
+Python mainly provides **two types of loops**: `while` loop and `for` loop.
+
+---
+
+### `while` Loop
+
+A `while` loop continues running **as long as** the condition remains true.
+
+Basic structure:
+
+```python
+while condition:
+    # repeated code
+```
+
+**Important:**
+
+- Must update the variable inside the loop
+- Otherwise it becomes an infinite loop
+
+### for Loop
+
+A for loop is used to iterate over a sequence, such as:
+
+- a range of numbers
+- a string
+- a list
+
+Basic Structure:
+
+```python
+for item in sequence:
+    # repeated code
+```
+
+### Using range()
+
+The range() function is commonly used with loops.
+Example:
+
+```python
+for i in range(3):
+    print("Hello")
+```
+
+Output:
+
+```python
+Hello
+Hello
+Hello
+```
+
+### Looping Over Strings
+
+Example:
+
+```python
+for char in "Aryan":
+    print(char)
+```
+
+- break and continue (Optional basics)
+- break → exits the loop immediately
+- continue → skips the current iteration and moves to the next
+
+Example:
+
+```python
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+```
+
+Loops allow us to perform repeated tasks efficiently and reduce code repetition.
