@@ -499,3 +499,39 @@ print(name)   # ❌ Error: name is not defined
 
 Variables defined outside functions are global, but using too many globals is not recommended.
 Always prefer local variables for cleaner, safer code.
+
+### 24. return Statement
+
+The return statement is used inside a function to send a value back to the place where the function was called.
+
+- print() → shows something on the screen
+- return → gives back a value so it can be stored or used later
+
+```python
+def square(x):
+    return x * x
+
+result = square(5)
+print(result)   # 25
+```
+
+## Important points:
+
+After return executes, the function stops immediately
+
+- A function can return:
+- numbers
+- strings
+- lists
+- booleans
+- or even nothing (returns None)
+
+### Example of stopping after return:
+
+```python
+def test():
+    return 10
+    print("This will never run")  # unreachable code
+```
+
+- Using return makes functions more reusable because they can give back values instead of just printing them.
