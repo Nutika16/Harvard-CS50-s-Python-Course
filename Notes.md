@@ -574,3 +574,13 @@ elif another_condition:
 else:
     # code
 ```
+
+### Logical Operators: and, or
+
+Logical operators allow us to combine multiple conditions.
+
+**and**
+All conditions must be true for the whole expression to be true.
+
+**or**
+Only one condition needs to be true for the expression to be true.
