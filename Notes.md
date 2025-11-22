@@ -584,3 +584,24 @@ All conditions must be true for the whole expression to be true.
 
 **or**
 Only one condition needs to be true for the expression to be true.
+
+### 26. `match` Statement
+
+Python also provides a `match` statement (introduced in Python 3.10) which works similar to a **switch-case** in other languages.  
+It is used to compare a value against several patterns and execute the matching block.
+
+Basic structure:
+
+```python
+match variable:
+    case value1:
+        # code
+    case value2:
+        # code
+    case _:
+        # default case
+```
+
+- match → checks the variable
+- case → pattern/value to compare
+- \_ → wildcard (acts like “else”), matches anything
