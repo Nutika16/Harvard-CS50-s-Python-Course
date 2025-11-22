@@ -496,3 +496,6 @@ def hello():
 hello()
 print(name)   # ❌ Error: name is not defined
 ```
+
+Variables defined outside functions are global, but using too many globals is not recommended.
+Always prefer local variables for cleaner, safer code.
