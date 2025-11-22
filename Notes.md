@@ -411,3 +411,36 @@ ndigits lets us control the precision — for example:
 - 1 → tenths
 - 2 → hundredths
 - 0 → tens (python returns float e.g., round(67, -1) rounds to tens place)
+
+### 22. Functions
+
+In Python, we can create our own functions using the keyword **`def`**, which stands for _define_.  
+Functions allow us to group code together so it can be reused whenever needed.
+
+Basic structure:
+
+```python
+def function_name():
+    # code block
+```
+
+- def → used to define a new function
+- function_name → the name we choose for our function
+- () → parentheses used when defining and calling functions
+- : → indicates the start of the function block
+- The code inside the function must be indented
+
+Example:
+
+```python
+def hello():
+    print("Hello!")
+```
+
+To run the function, we call it:
+
+```python
+hello()
+```
+
+Functions help avoid repetition and make the program cleaner, readable, and easier to maintain.
