@@ -445,7 +445,7 @@ hello()
 
 Functions help avoid repetition and make the program cleaner, readable, and easier to maintain.
 
-### 23. Function Order & Using `main()`
+### 22. Function Order & Using `main()`
 
 If we define a user function _at the bottom of the file_ and try to call it **before it's defined**, Python will give an error saying the function does not exist.
 
