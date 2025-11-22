@@ -363,7 +363,7 @@ You can find the calculator file here:
 
 It serves as a practical way to understand operators and how Python handles number calculations.
 
-### 20. Float
+### 19. Float
 
 A **float** is a data type used to store numbers with decimal points.
 
@@ -377,7 +377,7 @@ z = 10.0
 
 Floats allow Python to represent fractional values, unlike integers which store only whole numbers.
 
-### 21. round() Function
+### 20. round() Function
 
 Python provides the built-in round() function to round a floating-point number.
 
@@ -412,7 +412,7 @@ ndigits lets us control the precision — for example:
 - 2 → hundredths
 - 0 → tens (python returns float e.g., round(67, -1) rounds to tens place)
 
-### 22. Functions
+### 21. Functions
 
 In Python, we can create our own functions using the keyword **`def`**, which stands for _define_.  
 Functions allow us to group code together so it can be reused whenever needed.
