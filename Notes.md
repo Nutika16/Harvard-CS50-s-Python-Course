@@ -444,3 +444,34 @@ hello()
 ```
 
 Functions help avoid repetition and make the program cleaner, readable, and easier to maintain.
+
+### 23. Function Order & Using `main()`
+
+If we define a user function _at the bottom of the file_ and try to call it **before it's defined**, Python will give an error saying the function does not exist.
+
+This happens because Python reads code **from top to bottom**, so it must encounter the function definition _before_ it is called.
+
+To solve this, we follow a common structure:
+
+1. Put the main logic inside a `main()` function
+2. Define other functions **above or below** — order doesn't matter
+3. Call `main()` at the end of the file
+
+This ensures Python always knows what to execute first.
+
+Example:
+
+```python
+def main():
+    name = input("What is your name? ")
+    hello(name)
+
+def hello(name):
+    print(f"Hello, {name}")
+
+main()
+```
+
+- main() contains the program flow
+- hello() can be written anywhere in the file
+- Calling main() at the bottom starts the program
