@@ -475,3 +475,24 @@ main()
 - main() contains the program flow
 - hello() can be written anywhere in the file
 - Calling main() at the bottom starts the program
+
+### 23. Scope of a Variable
+
+The _scope_ of a variable refers to **where the variable is accessible** in the program.
+
+In Python:
+
+- A variable created **inside a function** is called a **local variable**
+- It can only be used _inside that function_
+- Outside the function, the variable does **not** exist
+
+Example:
+
+```python
+def hello():
+    name = "Aryan"   # local variable
+    print(name)
+
+hello()
+print(name)   # ❌ Error: name is not defined
+```
