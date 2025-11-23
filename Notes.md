@@ -685,3 +685,63 @@ for i in range(5):
 ```
 
 Loops allow us to perform repeated tasks efficiently and reduce code repetition.
+
+### 28. Lists in Python
+
+A **list** in Python is a data structure used to store multiple values in a single variable.  
+Lists are **ordered**, **changeable (mutable)**, and can hold **different data types** together.
+
+Example:
+
+```python
+numbers = [1, 2, 3, 4]
+names = ["Aryan", "Rahul", "Kumar"]
+mixed = [1, "Hello", 3.14]
+```
+
+**Key Properties of Lists**
+
+- Ordered → items have fixed positions (indexing starts at 0)
+- Mutable → you can change, add, or remove items
+- Allow duplicates → same value can appear more than once
+- Can store different data types → int, str, float, etc.
+
+**Assessing elements:**
+
+### 1. Use Indexing
+
+```python
+names = ["Aryan", "Rahul", "Kumar"]
+print(names[0])   # Aryan
+print(names[2])   # Kumar
+```
+
+### 2. Negative Indexing
+
+```python
+print(names[-1])  # last element → Kumar
+```
+
+### 3. Modifying List Elements
+
+```python
+numbers = [10, 20, 30]
+numbers[1] = 25
+print(numbers)    # [10, 25, 30]
+```
+
+### Common List Methods
+
+- .append(x) → adds item to end
+- .insert(i, x) → adds item at position
+- .remove(x) → removes first occurrence
+- .pop() → removes last item
+- .sort() → sorts list
+- .reverse() → reverses list
+
+### Looping through a list
+
+```python
+for item in fruits:
+    print(item)
+```
