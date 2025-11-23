@@ -730,7 +730,7 @@ numbers[1] = 25
 print(numbers)    # [10, 25, 30]
 ```
 
-### Common List Methods
+### 4. Common List Methods
 
 - .append(x) → adds item to end
 - .insert(i, x) → adds item at position
@@ -739,9 +739,63 @@ print(numbers)    # [10, 25, 30]
 - .sort() → sorts list
 - .reverse() → reverses list
 
-### Looping through a list
+### 5. Looping through a list
 
 ```python
 for item in fruits:
     print(item)
+```
+
+### 29. Dictionaries (dict)
+
+A **dictionary** is a data structure in Python that allows us to **associate one value with another**.  
+It stores data in **key–value pairs**, where each key maps to a specific value.
+
+Example:
+
+```python
+student = {"name": "Aryan", "age": 20, "grade": "A"}
+```
+
+- "name" → key
+- "Aryan" → value
+- Keys must be unique
+- Values can be of any data type
+
+### Key Properties of Dictionaries
+
+- Key–Value mapping
+- Unordered (Python 3.7+ keeps insertion order)
+- Mutable → values can be changed
+- Keys must be immutable types (strings, numbers, tuples)
+
+**1. Accessing Values**
+Use the key:
+
+```python
+print(student["name"])     # Aryan
+print(student["age"])      # 20
+```
+
+**2. Modifying a Dictionary**
+
+```python
+student["age"] = 21
+```
+
+**Adding a new key–value pair:**
+student["city"] = "Delhi"
+
+### Common Dictionary Methods
+
+- .get(key) → safely get value
+- .keys() → list of keys
+- .values() → list of values
+- .items() → list of key-value pairs
+
+Example:
+
+```python
+for key, value in student.items():
+    print(key, value)
 ```
