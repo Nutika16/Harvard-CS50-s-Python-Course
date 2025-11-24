@@ -888,3 +888,28 @@ def todo():
 ```
 
 **pass does nothing — it simply allows the program to run without errors.**
+
+### 32. raise Keyword
+
+The raise keyword is used to manually trigger an exception in Python.
+
+You use raise when:
+
+- You want to signal that something went wrong
+- You want to enforce rules
+- You want to stop execution at a certain condition
+
+Example:
+
+```python
+def check_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative")
+```
+
+Here:
+
+- We purposely “raise” a ValueError
+- The message helps identify the error
+
+raise stops the program immediately unless handled using try/except.
