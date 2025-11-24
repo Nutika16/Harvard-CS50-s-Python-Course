@@ -872,3 +872,19 @@ A `NameError` after a `try`/`except` usually means the variable was never assign
 - Initialize the variable before `try` (e.g., `x = None`) and check it after.
 - Use `try` / `except` / `else` and reference the variable only in `else`.
 - Use a loop to repeatedly ask for input until valid (recommended for user input).
+
+### 31. `pass` Keyword
+
+The `pass` keyword is used when a statement is required syntactically,  
+but you don’t want to write any code there **yet**.
+
+It acts as a **placeholder** so the program doesn’t throw an error.
+
+Example:
+
+```python
+def todo():
+    pass    # code will be written later
+```
+
+**pass does nothing — it simply allows the program to run without errors.**
