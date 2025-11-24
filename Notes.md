@@ -799,3 +799,76 @@ Example:
 for key, value in student.items():
     print(key, value)
 ```
+
+### 30. Exceptions
+
+An **exception** is an event that occurs while the program is running and **disrupts the normal flow** of execution.
+
+Examples include:
+
+- Dividing by zero
+- Converting invalid input
+- Accessing out-of-range list index
+
+Python stops the program when an exception occurs unless we handle it.
+
+---
+
+### Syntax Errors vs Runtime Errors
+
+#### **Syntax Error**
+
+Happens when the programmer writes something invalid according to Python's rules.
+
+Examples:
+
+- Missing colon
+- Misspelled keyword
+- Incorrect indentation
+
+These must be **fixed by the programmer** before the code can run.
+
+Example:
+
+```python
+if x == 3
+    print("Hello")
+# ❌ SyntaxError (missing :)
+```
+
+### Runtime Error
+
+Occurs while the program is running, even if the syntax is correct.
+
+```python
+x = int("abc")     # ❌ ValueError
+```
+
+We cannot always predict runtime errors, so to prevent the program from crashing, we use exception handling.
+
+### Handling Exceptions (try / except)
+
+We add extra code to catch errors and prevent the program from stopping.
+
+Example:
+
+```python
+try:
+    x = int(input("Enter a number: "))
+    print(x)
+except:
+    print("Invalid input!")
+```
+
+- Code inside try runs normally
+- If an error occurs → except block runs
+
+### Handling NameError after try/except
+
+A `NameError` after a `try`/`except` usually means the variable was never assigned because an exception occurred before the assignment finished. This is about **existence** of the variable, not scope.
+
+**Fixes:**
+
+- Initialize the variable before `try` (e.g., `x = None`) and check it after.
+- Use `try` / `except` / `else` and reference the variable only in `else`.
+- Use a loop to repeatedly ask for input until valid (recommended for user input).
