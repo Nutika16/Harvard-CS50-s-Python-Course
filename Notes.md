@@ -1084,3 +1084,68 @@ sys.argv
 - sys.argv[0] → the name of the script
 - sys.argv[1] → first argument
 - sys.argv[2] → second argument and so on..........
+
+argv stands for argument vector
+
+Example:
+
+```python
+import sys
+print(sys.argv)
+```
+
+Running:
+
+```ngix
+python greet.py Aryan Kumar
+```
+
+Output:
+
+```css
+['greet.py', 'Aryan', 'Kumar']
+```
+
+### Using Arguments in a Program
+
+```python
+import sys
+
+if len(sys.argv) < 2:
+    print("Missing argument")
+else:
+    print(f"Hello, {sys.argv[1]}")
+```
+
+Explanation:
+
+- len(sys.argv) tells how many arguments were passed
+- We avoid errors by checking the length first
+
+### Handling Errors with Command-Line Arguments
+
+If we try to access an argument that isn’t given:
+
+```python
+sys.argv[1]
+```
+
+Python will raise
+
+```ngix
+IndexError
+```
+
+So, we are checking before using it to avoid crashes
+
+```python
+if len(sys.argv) < 2:
+    print("Please provide a name")
+    sys.exit()
+```
+
+### Exiting the Program
+
+sys.exit() ends the program immediately.
+
+**Command-line arguments are useful for making scripts that can be automated, scheduled, or run with different inputs without changing the code.**
