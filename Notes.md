@@ -961,3 +961,19 @@ print(s(25))
 ```
 
 Aliases help shorten long module names.
+
+### Built-in Modules Example: random
+
+```python
+import random
+num = random.randint(1, 10)
+print(num)
+```
+
+- random.randint(a, b) returns a random integer between a and b.
+
+```python
+import random
+coin = random.choice(["heads" , "tails"]) # choice is the function and it only takes seq i.e. lists
+print(coin)
+```
