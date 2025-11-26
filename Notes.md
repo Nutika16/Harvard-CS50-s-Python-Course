@@ -1017,3 +1017,9 @@ Python comes with a built-in library called **statistics**, which allows us to e
 These functions save time because we don’t need to write the logic ourselves.
 
 ---
+
+### Importing the Statistics Module
+
+```python
+import statistics
+```
