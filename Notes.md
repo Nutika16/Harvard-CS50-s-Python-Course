@@ -1044,3 +1044,10 @@ print(statistics.median(numbers))   # Output: 25
 numbers = [1, 2, 2, 3]
 print(statistics.mode(numbers))     # Output: 2
 ```
+
+### Shortcut: Importing Specific Functions
+
+```python
+from statistics import mean, median, mode
+print(mean([1, 2, 3]))
+```
