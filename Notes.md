@@ -986,3 +986,22 @@ Instead of importing the whole module, we can import only what we need:
 from math import sqrt
 print(sqrt(25))
 ```
+
+### Creating Your Own Module
+
+Any .py file can act as your own module.
+
+Example:
+
+- helpers.py
+
+```python
+def greet(name):
+print(f"Hello, {name}")
+```
+
+```python
+- main.py
+import helpers
+helpers.greet("Aryan")
+```
