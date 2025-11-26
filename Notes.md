@@ -1023,3 +1023,24 @@ These functions save time because we don’t need to write the logic ourselves.
 ```python
 import statistics
 ```
+
+### Calculating Mean
+
+```python
+numbers = [10, 20, 30]
+print(statistics.mean(numbers))   # Output: 20
+```
+
+### Calculating Median
+
+```python
+numbers = [10, 20, 30, 40]
+print(statistics.median(numbers))   # Output: 25
+```
+
+### Calculating Mode
+
+```python
+numbers = [1, 2, 2, 3]
+print(statistics.mode(numbers))     # Output: 2
+```
