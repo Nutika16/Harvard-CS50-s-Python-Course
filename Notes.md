@@ -943,3 +943,21 @@ Now we can use anything inside the math module:
 ```python
 print(math.sqrt(25))
 ```
+
+### Using Aliases
+
+We can rename a module or function using as:
+
+```python
+import math as m
+print(m.sqrt(25))
+```
+
+or
+
+```python
+from math import sqrt as s
+print(s(25))
+```
+
+Aliases help shorten long module names.
