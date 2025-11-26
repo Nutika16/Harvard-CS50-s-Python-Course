@@ -977,3 +977,12 @@ import random
 coin = random.choice(["heads" , "tails"]) # choice is the function and it only takes seq i.e. lists
 print(coin)
 ```
+
+### Importing Specific Functions
+
+Instead of importing the whole module, we can import only what we need:
+
+```python
+from math import sqrt
+print(sqrt(25))
+```
