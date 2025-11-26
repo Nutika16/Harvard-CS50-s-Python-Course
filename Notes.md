@@ -1000,8 +1000,9 @@ def greet(name):
 print(f"Hello, {name}")
 ```
 
-```python
 - main.py
+
+```python
 import helpers
 helpers.greet("Aryan")
 ```
