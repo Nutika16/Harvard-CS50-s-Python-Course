@@ -1051,3 +1051,36 @@ print(statistics.mode(numbers))     # Output: 2
 from statistics import mean, median, mode
 print(mean([1, 2, 3]))
 ```
+
+### 35. Command-Line Arguments (`sys` Module)
+
+Python programs can also receive input through the **command line**, not just through `input()`.  
+For this, we use the built-in **`sys` module**.
+
+Command-line arguments allow us to pass values to a Python script **when running it**, like:
+
+python hello.py Aryan
+
+````yaml
+
+Here, `"Aryan"` is a command-line argument.
+
+---
+
+### Importing sys
+
+```python
+import sys
+````
+
+### Accessing Command-Line Arguments
+
+All command-line arguments are stored in a list called:
+
+```python
+sys.argv
+```
+
+- sys.argv[0] → the name of the script
+- sys.argv[1] → first argument
+- sys.argv[2] → second argument and so on..........
