@@ -1005,3 +1005,15 @@ print(f"Hello, {name}")
 import helpers
 helpers.greet("Aryan")
 ```
+
+### 34. `statistics` Library
+
+Python comes with a built-in library called **statistics**, which allows us to easily perform common statistical calculations like:
+
+- **mean** (average)
+- **median** (middle value)
+- **mode** (most frequent value)
+
+These functions save time because we don’t need to write the logic ourselves.
+
+---
