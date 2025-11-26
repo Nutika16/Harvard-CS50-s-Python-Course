@@ -914,4 +914,16 @@ Here:
 
 raise stops the program immediately unless handled using try/except.
 
-### 33. Libraries
+### 33. Libraries and Modules
+
+In Python, a **module** is a file that contains reusable code — such as functions, variables, or classes.  
+A **library** is a collection of modules that provide additional features beyond the basic language.
+
+Modules help us:
+
+- Organize code
+- Reuse code across programs
+- Access pre-written functionality
+- Keep programs clean and modular
+
+---
