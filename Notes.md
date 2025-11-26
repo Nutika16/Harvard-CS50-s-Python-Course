@@ -927,3 +927,19 @@ Modules help us:
 - Keep programs clean and modular
 
 ---
+
+### Importing Modules
+
+We use the `import` keyword to bring a module into our program.
+
+Example:
+
+```python
+import math
+```
+
+Now we can use anything inside the math module:
+
+```python
+print(math.sqrt(25))
+```
