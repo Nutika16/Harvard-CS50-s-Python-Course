@@ -1150,3 +1150,77 @@ if len(sys.argv) < 2:
 sys.exit() ends the program immediately.
 
 **Command-line arguments are useful for making scripts that can be automated, scheduled, or run with different inputs without changing the code.**
+
+### 36. Slicing
+
+Slicing allows us to extract a **portion** (a slice) of a sequence such as:
+
+- strings
+- lists
+- tuples
+
+The general slice syntax is:
+
+sequence[start : end]
+
+```csharp
+
+- `start` → index where the slice begins (inclusive)
+- `end` → index where the slice stops (exclusive)
+```
+
+Example with a string:
+
+```python
+name = "Aryan"
+print(name[0:3])    # Ary
+```
+
+### Omitting Start or End
+
+If start is omitted, it begins from the start of the sequence:
+
+```python
+name[:2]    # Ar
+```
+
+If end is omitted, it slices till the end:
+
+```python
+name[2:]    # yan
+```
+
+### Using Negative Indexes
+
+Negative indexes count from the end:
+
+```python
+name = "Aryan"
+print(name[-3:])    # yan
+```
+
+### Slicing with Step
+
+We can also specify a step:
+
+```pgsql
+sequence[start : end : step]
+```
+
+Example:
+
+```python
+text = "abcdef"
+print(text[0:6:2])   # ace
+```
+
+### Slicing Lists
+
+Example:
+
+```python
+numbers = [10, 20, 30, 40, 50]
+print(numbers[1:4])    # [20, 30, 40]
+```
+
+Slicing is powerful for extracting specific parts of sequences in an efficient and readable way.
