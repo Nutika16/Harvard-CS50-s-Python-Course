@@ -8,5 +8,5 @@ def hello(name):
 def goodbye(name):
     print(f"Goodbye, {name}")
 
-if __name__ == "__main()__": #if you don't use this condition then while importing main will always get called
+if __name__ == "__main__": #if you don't use this condition then while importing main will always get called
     main()
