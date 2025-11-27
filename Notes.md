@@ -1224,3 +1224,51 @@ print(numbers[1:4])    # [20, 30, 40]
 ```
 
 Slicing is powerful for extracting specific parts of sequences in an efficient and readable way.
+
+### 37. Packages
+
+A **package** is a collection of third-party modules that are not included in Python by default.  
+These packages provide additional functionality that we can install and use in our programs.
+
+Examples:
+
+- `pandas` → data analysis
+- `numpy` → numerical computing
+- `requests` → HTTP requests
+- `flask` → web development
+
+---
+
+### Installing Packages
+
+We use **pip**, Python’s package manager, to install packages.
+
+Example:
+
+```bash
+pip install requests
+```
+
+This downloads and installs the package so it can be used in your Python code.
+
+### Using Installed Packages
+
+Once installed, import them like any other module:
+
+```python
+import requests
+response = requests.get("https://example.com")
+print(response.status_code)
+```
+
+### List All Installed Packages
+
+```python
+pip list
+```
+
+### Upgrade a Package
+
+```python
+pip install --upgrade package_name
+```
