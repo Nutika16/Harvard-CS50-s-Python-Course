@@ -1272,3 +1272,42 @@ pip list
 ```python
 pip install --upgrade package_name
 ```
+
+### 38. Unit tests
+
+Unit testing is a method of testing **individual parts (units)** of your code — usually functions — to ensure they work correctly.
+
+Python provides a built-in module called **unittest** to write and run these tests.
+
+Unit tests help in:
+
+- Catching bugs early
+- Ensuring functions behave as expected
+- Preventing future changes from breaking existing code
+- Making code more reliable and maintainable
+
+---
+
+### Creating a Unit Test
+
+A unit test file usually:
+
+- Imports `unittest`
+- Imports the function(s) you want to test
+- Contains test classes with test methods
+
+### Common Assertions in unittest
+
+- assertEqual(a, b) → checks if a == b
+- assertNotEqual(a, b)
+- assertTrue(x)
+- assertFalse(x)
+- assertRaises(error_type)
+
+Example:
+
+```python
+self.assertRaises(ValueError, square, "abc")
+```
+
+**Unit testing is an important habit in professional development and ensures your code remains correct as it grows.**
