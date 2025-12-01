@@ -1311,3 +1311,82 @@ self.assertRaises(ValueError, square, "abc")
 ```
 
 **Unit testing is an important habit in professional development and ensures your code remains correct as it grows.**
+
+### 39. File I/O (Input / Output)
+
+File I/O refers to **reading from** and **writing to** files using Python.  
+This helps us store data permanently instead of only keeping it in memory.
+
+Python provides the built-in `open()` function to work with files.
+
+---
+
+### Opening a File
+
+Basic syntax:
+
+```python
+file = open("filename.txt", "mode")
+```
+
+Common modes:
+
+- "r" → read (default)
+- "w" → write (overwrites existing file)
+- "a" → append (adds to the file)
+- "r+" → read and write
+
+### Reading a File
+
+```python
+with open("data.txt", "r") as file:
+    content = file.read()
+    print(content)
+```
+
+- read() → reads entire file as a single string
+- Using with automatically closes the file
+
+### Read line-by-line:
+
+```python
+with open("data.txt", "r") as file:
+    for line in file:
+        print(line.strip())
+```
+
+### Writing to a File
+
+```python
+with open("data.txt", "w") as file:
+    file.write("Hello, world!")
+```
+
+-
+- "w" creates the file if it doesn't exist
+- "w" overwrites existing content
+
+### Appending to a file:
+
+```python
+with open("data.txt", "a") as file:
+    file.write("\nNew line added.")
+```
+
+### Writing Multiple Lines
+
+```python
+lines = ["Apple\n", "Banana\n", "Cherry\n"]
+
+with open("fruits.txt", "w") as file:
+    file.writelines(lines)
+```
+
+**Safest Way: Using with**
+
+- Using with open(...) is recommended because:
+- File closes automatically
+- Prevents memory leaks
+- Cleaner and more readable
+
+**File I/O is essential for saving data, reading configuration files, logs, reports, and many real-world applications.**
