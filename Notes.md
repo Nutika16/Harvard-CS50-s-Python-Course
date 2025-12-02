@@ -1390,3 +1390,16 @@ with open("fruits.txt", "w") as file:
 - Cleaner and more readable
 
 **File I/O is essential for saving data, reading configuration files, logs, reports, and many real-world applications.**
+
+### 40. CSV Handling (Reader, DictReader, DictWriter)
+
+CSV (Comma-Separated Values) files are widely used for storing tabular data.  
+Python provides the built-in **csv** module to read and write CSV files easily.
+
+---
+
+### Importing the CSV Module
+
+```python
+import csv
+```
