@@ -1435,3 +1435,41 @@ Output:
 
 - Each row is returned as a list
 - Columns remain positional (indexed)
+
+### 40.2 csv.DictReader
+
+DictReader reads each row as a dictionary where keys come from the header row.
+
+Example:
+
+```python
+import csv
+with open("students.csv") as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        print(row)
+```
+
+If the file contains:
+
+```python
+name,age,branch
+Aryan,20,CS
+Rahul,21,IT
+```
+
+Output:
+
+```bash
+{'name': 'Aryan', 'age': '20', 'branch': 'CS'}
+{'name': 'Rahul', 'age': '21', 'branch': 'IT'}
+```
+
+Advantages:
+Easier to access using column names:
+
+```python
+print(row["name"])
+```
+
+- Makes code more readable than positional indexing
