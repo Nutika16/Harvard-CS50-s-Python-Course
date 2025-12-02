@@ -1473,3 +1473,42 @@ print(row["name"])
 ```
 
 - Makes code more readable than positional indexing
+
+### 40.3 csv.DictWriter
+
+DictWriter writes data as dictionaries, automatically using keys as headers.
+Example:
+
+```python
+import csv
+
+with open("output.csv", "w", newline="") as file:
+    writer = csv.DictWriter(file, fieldnames=["name", "age", "branch"])
+    writer.writeheader()  # writes: name,age,branch
+
+    writer.writerow({"name": "Aryan", "age": 20, "branch": "CS"})
+    writer.writerow({"name": "Rahul", "age": 21, "branch": "IT"})
+```
+
+This will produce:
+
+```pgsql
+name,age,branch
+Aryan,20,CS
+Rahul,21,IT
+```
+
+**Important:**
+
+- fieldnames must match the keys in each dict
+- writeheader() writes the first row (column names)
+
+### 40.4 When to Use What?
+
+| Class        | Use Case                                                  |
+| ------------ | --------------------------------------------------------- |
+| `reader`     | When the CSV has **no header** or structure is simple     |
+| `DictReader` | When file has **column names** and you want readable code |
+| `DictWriter` | When writing data using **dictionaries** for clarity      |
+
+**Handling CSVs is extremely common in data processing, automation scripts, reporting, and backend development.**
