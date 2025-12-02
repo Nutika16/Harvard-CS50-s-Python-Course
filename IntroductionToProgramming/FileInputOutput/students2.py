@@ -1,3 +1,6 @@
+
+# In this, we used the reader to read the csv file.
+
 import csv
 
 students = []
