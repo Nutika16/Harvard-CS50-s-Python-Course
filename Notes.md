@@ -1403,3 +1403,35 @@ Python provides the built-in **csv** module to read and write CSV files easily.
 ```python
 import csv
 ```
+
+### 40.1 csv.reader
+
+The reader class reads CSV files row-by-row as lists.
+
+Example:
+
+```python
+import csv
+
+with open("students.csv") as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
+```
+
+If students.csv contains:
+
+```python
+Aryan,20,CS
+Rahul,21,IT
+```
+
+Output:
+
+```python
+['Aryan', '20', 'CS']
+['Rahul', '21', 'IT']
+```
+
+- Each row is returned as a list
+- Columns remain positional (indexed)
