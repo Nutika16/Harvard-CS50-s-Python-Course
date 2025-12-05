@@ -1512,3 +1512,7 @@ Rahul,21,IT
 | `DictWriter` | When writing data using **dictionaries** for clarity      |
 
 **Handling CSVs is extremely common in data processing, automation scripts, reporting, and backend development.**
+
+### pil
+
+stands for pillow. A Library that is used to perform operations on image file
