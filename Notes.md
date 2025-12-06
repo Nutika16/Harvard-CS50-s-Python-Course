@@ -1513,4 +1513,6 @@ Rahul,21,IT
 
 **Handling CSVs is extremely common in data processing, automation scripts, reporting, and backend development.**
 
+### pil
+
 stands for pillow. A Library that is used to perform operations on image file
