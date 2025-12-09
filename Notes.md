@@ -1523,3 +1523,9 @@ To install:
 ```bash
 pip install pillow
 ```
+
+### Importing Pil
+
+```python
+from PIL import Image
+```
