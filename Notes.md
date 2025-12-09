@@ -1565,3 +1565,11 @@ resized.save("photo_resized.jpg")
 img = Image.open("photo.png")
 img.save("photo.jpg")
 ```
+
+### Cropping an Image
+
+```python
+img = Image.open("photo.jpg")
+cropped = img.crop((0, 0, 200, 200))
+cropped.save("photo_cropped.jpg")
+```
