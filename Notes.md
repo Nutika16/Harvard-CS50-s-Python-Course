@@ -1513,6 +1513,13 @@ Rahul,21,IT
 
 **Handling CSVs is extremely common in data processing, automation scripts, reporting, and backend development.**
 
-### pil
+### 41. PIL (Pillow)
 
-stands for pillow. A Library that is used to perform operations on image file
+**PIL** stands for _Python Imaging Library_.  
+Its modern version is called **Pillow** — a powerful library used to perform operations on image files.
+
+To install:
+
+```bash
+pip install pillow
+```
