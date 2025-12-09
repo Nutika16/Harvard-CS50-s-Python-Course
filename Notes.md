@@ -1550,3 +1550,11 @@ from PIL import Image
 img = Image.open("photo.jpg")
 img.show()
 ```
+
+### Resizing an Image
+
+```python
+img = Image.open("photo.jpg")
+resized = img.resize((300, 300))
+resized.save("photo_resized.jpg")
+```
