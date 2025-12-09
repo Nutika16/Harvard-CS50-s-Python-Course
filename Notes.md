@@ -1573,3 +1573,11 @@ img = Image.open("photo.jpg")
 cropped = img.crop((0, 0, 200, 200))
 cropped.save("photo_cropped.jpg")
 ```
+
+### Creating Thumbnail
+
+```python
+img = Image.open("photo.jpg")
+img.thumbnail((150, 150))
+img.save("photo_thumbnail.jpg")
+```
