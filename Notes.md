@@ -1558,3 +1558,10 @@ img = Image.open("photo.jpg")
 resized = img.resize((300, 300))
 resized.save("photo_resized.jpg")
 ```
+
+### Converting Image Format
+
+```python
+img = Image.open("photo.png")
+img.save("photo.jpg")
+```
