@@ -1529,3 +1529,15 @@ pip install pillow
 ```python
 from PIL import Image
 ```
+
+### Common Uses of Pillow
+
+**Pillow allows you to:**
+
+- Open images
+- Resize images
+- Crop image
+- Convert image formats (PNG → JPG, etc.)
+- Rotate and flip images
+- Create thumbnails
+- Save modified images
