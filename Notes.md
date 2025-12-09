@@ -1541,3 +1541,12 @@ from PIL import Image
 - Rotate and flip images
 - Create thumbnails
 - Save modified images
+
+### Opening an Image
+
+```python
+from PIL import Image
+
+img = Image.open("photo.jpg")
+img.show()
+```
