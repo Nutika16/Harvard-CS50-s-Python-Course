@@ -1589,3 +1589,17 @@ img.save("photo_thumbnail.jpg")
 - Data preprocessing
 - Machine learning (image-based models)
 - It provides simple functions to manipulate and process image files efficiently.
+
+### 42. Regular Expressions (Regex)
+
+Regular expressions (also called **regexes**) are used to **find, match, or validate patterns** in text.
+
+They are commonly used to:
+
+- Validate user input (email, phone number, password)
+- Search for specific patterns in text
+- Extract required information from strings
+
+Python provides a built-in library called **`re`** to work with regular expressions.
+
+---
