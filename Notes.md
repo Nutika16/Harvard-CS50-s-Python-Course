@@ -1603,3 +1603,9 @@ They are commonly used to:
 Python provides a built-in library called **`re`** to work with regular expressions.
 
 ---
+
+### Importing the `re` Module
+
+```python
+import re
+```
