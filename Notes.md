@@ -1631,3 +1631,18 @@ else:
 - @ → must contain @
 - \. → dot (.)
 - $ → end of string
+
+**Common re Functions**
+
+- re.search() → searches for a pattern anywhere in the string
+- re.match() → checks pattern only at the beginning
+- re.findall() → returns all matches as a list
+- re.sub() → replaces matches with another string
+
+Example:
+
+```python
+text = "My phone number is 9876543210"
+numbers = re.findall(r"\d+", text)
+print(numbers)
+```
