@@ -1624,3 +1624,10 @@ else:
     print("Invalid email")
 
 ```
+
+**Explanation:**
+
+- ^ → start of string
+- @ → must contain @
+- \. → dot (.)
+- $ → end of string
