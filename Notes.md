@@ -1646,3 +1646,9 @@ text = "My phone number is 9876543210"
 numbers = re.findall(r"\d+", text)
 print(numbers)
 ```
+
+**Why Use Regular Expressions?**
+
+- Flexible pattern matching
+- Saves time compared to manual checks
+- Widely used in validation and parsing tasks
