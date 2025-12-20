@@ -1609,3 +1609,18 @@ Python provides a built-in library called **`re`** to work with regular expressi
 ```python
 import re
 ```
+
+**Basic Example: Email Validation**
+Suppose we want the user to enter an email address and check whether it is valid.
+
+```python
+import re
+
+email = input("Enter your email: ")
+
+if re.search(r"^[\w\.-]+@[\w\.-]+\.\w+$", email):
+    print("Valid email")
+else:
+    print("Invalid email")
+
+```
