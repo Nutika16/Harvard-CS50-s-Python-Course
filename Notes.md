@@ -1647,6 +1647,16 @@ numbers = re.findall(r"\d+", text)
 print(numbers)
 ```
 
+### Common Regex Quantifiers
+
+Regular expressions use special symbols called **quantifiers** to specify how many times a character or pattern should repeat.
+
+- `.` → Matches **any single character except a newline**
+- `*` → Matches **0 or more repetitions** of the preceding pattern
+- `+` → Matches **1 or more repetitions** of the preceding pattern
+- `?` → Matches **0 or 1 repetition** of the preceding pattern
+- `{m}` → Matches **exactly `m` repetitions** of the preceding pattern
+
 **Why Use Regular Expressions?**
 
 - Flexible pattern matching
