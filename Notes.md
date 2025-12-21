@@ -1662,3 +1662,14 @@ Regular expressions use special symbols called **quantifiers** to specify how ma
 - Flexible pattern matching
 - Saves time compared to manual checks
 - Widely used in validation and parsing tasks
+
+### 43. Object-Oriented Programming (OOP)
+
+Object-Oriented Programming (OOP) is a programming paradigm that organizes code using **objects and classes** instead of only functions.
+
+OOP helps in:
+
+- Structuring large programs
+- Reusing code
+- Improving readability and maintainability
+- Modeling real-world entities
