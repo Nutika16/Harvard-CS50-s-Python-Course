@@ -1716,3 +1716,15 @@ class Student:
 
 - self refers to the current object
 - Used to access variables and methods belonging to the class
+
+### Instance Methods
+
+Methods defined inside a class that operate on object data.
+
+Example:
+
+```python
+class Student:
+    def greet(self):
+        print(f"Hello, my name is {self.name}")
+```
