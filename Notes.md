@@ -1673,3 +1673,15 @@ OOP helps in:
 - Reusing code
 - Improving readability and maintainability
 - Modeling real-world entities
+
+### Class
+
+A **class** is a blueprint for creating objects.  
+It defines the properties (attributes) and behaviors (methods) of an object.
+
+Syntax:
+
+```python
+class ClassName:
+    pass
+```
