@@ -1696,3 +1696,23 @@ Example:
 ```python
 student = Student()
 ```
+
+### **init** Method (Constructor)
+
+The **init** method is a special method that runs automatically when an object is created.
+
+It is used to initialize object attributes.
+
+Example:
+
+```python
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
+
+### self Keyword
+
+- self refers to the current object
+- Used to access variables and methods belonging to the class
