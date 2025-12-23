@@ -1685,3 +1685,14 @@ Syntax:
 class ClassName:
     pass
 ```
+
+### Object
+
+- An object is an instance of a class.
+- Objects are created from classes.
+
+Example:
+
+```python
+student = Student()
+```
