@@ -52,10 +52,17 @@ class Student:
     #         case _:
     #             return "🪄"
 
+    @classmethod
+    def get(cls):
+        name = input("Name: ")
+        house = input("House: ")
+        return cls(name,house)
+
 
 def main():
-    student = get_student()
-    student.house = "Number Four, Privet drive" 
+    student = Student.get() 
+    # student = get_student()
+    # student.house = "Number Four, Privet drive" 
     """Here, the problem is anybody can change anything therefore we use property"""
     print(student)
     '''The below statements are used when you want to print patronus'''
@@ -63,12 +70,12 @@ def main():
     # print(student.charm())
 
 
-def get_student():
-    name = input("Name: ")
-    house = input("House: ")
-    # patronus = input("Patronus: ")
-    return Student(name , house)
-    # return Student(name , house, patronus)
+# def get_student():
+#     name = input("Name: ")
+#     house = input("House: ")
+#     # patronus = input("Patronus: ")
+#     return Student(name , house)
+#     # return Student(name , house, patronus)
 
 if __name__ == "__main__":
     main()
