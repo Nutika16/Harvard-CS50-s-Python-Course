@@ -1789,3 +1789,78 @@ A setter allows us to control how values are assigned.
 
 - Without @property → explicit get_name() / set_name() methods
 - With @property → clean, pythonic attribute access
+
+### 45. Global Variables
+
+A **global variable** is a variable that is defined **outside all functions** and is accessible throughout the program.
+
+---
+
+### Local vs Global Scope
+
+- A **local variable** is defined inside a function  
+  → It can be used **only inside that function**
+- Trying to access a local variable outside its function will raise an error
+
+Example:
+
+```python
+def func():
+    x = 10      # local variable
+
+print(x)        # ❌ NameError
+```
+
+### Using Global Variables
+
+A variable defined outside functions is global:
+
+```python
+x = 10
+
+def func():
+    print(x)    # ✅ allowed (reading global variable)
+
+func()
+```
+
+**Reading a global variable inside a function works without global.**
+
+### Modifying Global Variables (The Catch)
+
+If you want to modify a global variable inside a function, Python treats it as local by default.
+To modify it, you must use the global keyword.
+
+**❌ This will raise an error:**
+
+```python
+x = 10
+
+def func():
+    x = x + 1   # ❌ UnboundLocalError
+
+func()
+```
+
+**✅ Correct way:**
+
+```python
+x = 10
+
+def func():
+    global x
+    x = x + 1
+
+func()
+print(x)        # 11
+```
+
+### Key Points to Remember
+
+Local variables cannot be accessed outside their function
+
+Global variables can be read inside functions without global
+
+To modify a global variable inside a function, global is required
+
+Excessive use of global variables is discouraged
