@@ -129,31 +129,35 @@ print(f"{value:.2f}")
 
 17. _Function that returns a greeting:_
 
-python
+```python
 def hello(name):
 return f"Hello, {name}"
+```
 
 18. _Command-line argument greeting:_
 
-python
+```python
 import sys
 
 if len(sys.argv) < 2:
 print("Missing name")
 else:
 print(f"Hello, {sys.argv[1]}")s
+```
 
 19. _Median using statistics:_
 
-python
+```python
 import statistics
 
 print(statistics.median([10, 30, 60]))
+```
 
 20. _Slicing "Introduction" into "Intro" and "duction":_
 
-python
+```python
 name = "Introduction"
 
 print(name[:5]) # Intro
 print(name[5:]) or print(name[-7:]) # duction
+```
