@@ -1861,3 +1861,35 @@ print(x)        # 11
 - Global variables can be read inside functions without global
 - To modify a global variable inside a function, global is required
 - Excessive use of global variables is discouraged
+
+### 46. Constants in Python
+
+In many programming languages, constants are defined using a special keyword like `const`.  
+However, **Python does not have a built-in keyword to define constants**.
+
+---
+
+### How Constants Are Represented in Python
+
+In Python, constants are created by **naming convention**, not enforcement.
+
+- Variables written in **ALL CAPITAL LETTERS** are treated as constants by convention
+- This indicates that the value **should not be modified**
+
+Example:
+
+```python
+PI = 3.14159
+MAX_USERS = 100
+```
+
+Although Python allows reassignment, developers choose not to change such values.
+
+**### Important Note**
+Python does not prevent you from changing constants:
+
+```python
+PI = 3.14
+PI = 3.14159265   # Allowed, but discouraged
+There will be no error, because Python is a dynamically typed language.
+```
