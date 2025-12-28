@@ -1857,10 +1857,7 @@ print(x)        # 11
 
 ### Key Points to Remember
 
-Local variables cannot be accessed outside their function
-
-Global variables can be read inside functions without global
-
-To modify a global variable inside a function, global is required
-
-Excessive use of global variables is discouraged
+- Local variables cannot be accessed outside their function
+- Global variables can be read inside functions without global
+- To modify a global variable inside a function, global is required
+- Excessive use of global variables is discouraged
