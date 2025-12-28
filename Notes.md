@@ -2126,3 +2126,136 @@ for x, y in pairs:
 - Works with lists, tuples, strings, and other iterables
 - Makes code concise and expressive
 - Commonly used in real-world Python code
+
+### 52. Unpacking
+
+Unpacking is a feature in Python that allows us to **assign elements of a collection to multiple variables in a single statement**.
+
+It improves:
+
+- Readability
+- Cleaner assignments
+- Easier handling of sequences and function returns
+
+---
+
+### Sequence Unpacking
+
+```python
+a, b = [1, 2]
+```
+
+- a gets 1
+- b gets 2
+
+**The number of variables must match the number of values.**
+
+### Tuple Unpacking
+
+```python
+x, y = (10, 20)
+```
+
+### Swapping Values Using Unpacking
+
+```python
+x, y = y, x
+```
+
+No temporary variable is required.
+
+### Unpacking with Functions
+
+Functions can return multiple values as a tuple, which can be unpacked:
+
+```python
+def get_coordinates():
+    return 3, 4
+
+x, y = get_coordinates()
+```
+
+### Extended Unpacking (\*)
+
+The \* operator allows collecting multiple values into a list.
+
+```python
+a, *b = [1, 2, 3, 4]
+a → 1
+
+b → [2, 3, 4]
+```
+
+### Unpacking in Loops
+
+```python
+pairs = [(1, 2), (3, 4), (5, 6)]
+
+for x, y in pairs:
+    print(x, y)
+```
+
+### Key Points
+
+- Works with lists, tuples, strings, and other iterables
+- Makes code concise and expressive
+- Commonly used in real-world Python code
+
+### 53. What is \*args?
+
+**Definition**
+
+- \*args collects extra positional arguments into a tuple.
+- “args” is just a name (convention)
+- - is what actually matters
+
+**Example**
+
+```python
+def f(*args):
+    print(args)
+
+f(10, 20, 30)
+```
+
+_Output:_
+
+```scss
+(10, 20, 30)
+```
+
+So:
+
+- args is a tuple
+- You can loop over it, index it, etc.
+
+### What is \*\*kwargs?
+
+_Definition_
+
+- \*\*kwargs collects extra keyword arguments into a dictionary.
+- “kwargs” = keyword arguments
+- \*\* is what matters
+
+_Example_
+
+```python
+def f(**kwargs):
+    print(kwargs)
+
+f(name="Nutika", age=21)
+```
+
+_Output:_
+
+bash
+
+```
+{'name': 'Nutika', 'age': 21}
+```
+
+So:
+
+- kwargs is a dict
+- Keys are argument names
+- Values are argument values
