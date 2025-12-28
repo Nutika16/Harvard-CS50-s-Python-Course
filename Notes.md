@@ -2018,3 +2018,37 @@ def add(a: int, b: int) -> int:
 - Docstring → describes the purpose
 - Comments → explain specific lines
 - Pseudocode → would have been written before this code existed
+
+### 51. argparse
+
+`argparse` is a built-in Python library used to create **user-friendly command-line interfaces**.
+
+It is an improvement over `sys.argv` because it:
+
+- Parses arguments automatically
+- Validates input
+- Generates help messages
+- Handles errors gracefully
+
+---
+
+### Why Use argparse Instead of sys.argv?
+
+- No manual index handling (`sys.argv[1]`, `sys.argv[2]`, etc.)
+- Automatic `--help` support
+- Clear error messages
+- Supports optional and named arguments
+
+---
+
+### Basic Usage
+
+```python
+import argparse
+
+parser = argparse.ArgumentParser(description="Greet the user")
+parser.add_argument("name", help="User's name")
+
+args = parser.parse_args()
+print(f"Hello, {args.name}")
+```
