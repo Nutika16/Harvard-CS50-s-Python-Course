@@ -1978,3 +1978,43 @@ greet(10)   # mypy will flag this as an error
 - They do not change how Python runs
 - Tools like mypy use type hints to catch bugs early
 - Widely used in professional and large-scale Python projects
+
+### 50. Docstrings
+
+A **docstring** is a special string used to **document code** in Python.  
+It explains what a module, class, function, or method does.
+
+Docstrings improve:
+
+- Code readability
+- Maintainability
+- Understanding for other developers
+- Automatic documentation generation
+
+---
+
+### How Docstrings Are Written
+
+Docstrings are written using **triple quotes** (`""" """`) and are placed:
+
+- Immediately after a function definition
+- Immediately after a class definition
+- At the top of a file (module docstring)
+
+---
+
+### Function Docstring Example
+
+```python
+def add(a: int, b: int) -> int:
+    """
+    Adds two integers and returns the result.
+    """
+    return a + b
+```
+
+### Important point to remember
+
+- Docstring → describes the purpose
+- Comments → explain specific lines
+- Pseudocode → would have been written before this code existed
