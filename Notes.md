@@ -1728,3 +1728,64 @@ class Student:
     def greet(self):
         print(f"Hello, my name is {self.name}")
 ```
+
+### 44. `@property` (Getter and Setter)
+
+In Object-Oriented Programming, **properties** allow us to access and modify class attributes **in a controlled way**.
+
+Instead of accessing variables directly, we use:
+
+- **getter** → to read a value
+- **setter** → to update a value with validation
+
+Python provides the `@property` decorator for this purpose.
+
+---
+
+### Why Use `@property`?
+
+- To **protect data**
+- To add **validation logic**
+- To keep attribute access **simple and readable**
+- To avoid breaking code when internal implementation changes
+
+---
+
+### Getter Using `@property`
+
+A getter allows us to access a private attribute like a normal variable.
+
+```python
+class Student:
+    def __init__(self, name):
+        self._name = name   # protected attribute
+
+    @property
+    def name(self):
+        return self._name
+```
+
+Usage:
+
+```python
+s = Student("Nutika")
+print(s.name)
+```
+
+Here, name behaves like an attribute, but internally it is a method.
+
+### Setter Using @property
+
+A setter allows us to control how values are assigned.
+
+### Key Points
+
+- \_variable → convention for protected attributes
+- @property → defines a getter
+- @property_name.setter → defines a setter
+- Access looks like a normal variable, not a function call
+
+### Without @property vs With @property
+
+- Without @property → explicit get_name() / set_name() methods
+- With @property → clean, pythonic attribute access
