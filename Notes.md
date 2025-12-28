@@ -2259,3 +2259,100 @@ So:
 - kwargs is a dict
 - Keys are argument names
 - Values are argument values
+
+### 54. Functional Tools and Comprehensions
+
+Python provides powerful tools to process collections efficiently and readably.
+
+---
+
+### `map()`
+
+`map()` applies a function to **each item** in an iterable and returns a map object.
+
+```python
+numbers = [1, 2, 3, 4]
+squared = map(lambda x: x * x, numbers)
+print(list(squared))
+
+```
+
+Key points:
+
+Applies the same operation to all elements
+
+Often replaced by list comprehensions for readability
+
+### filter()
+
+filter() selects elements from an iterable that satisfy a condition.
+
+```python
+numbers = [1, 2, 3, 4, 5]
+even = filter(lambda x: x % 2 == 0, numbers)
+print(list(even))
+```
+
+Key points:
+
+- Keeps elements where condition is True
+- Returns a filter object
+
+### List Comprehension
+
+List comprehension provides a compact and readable way to create lists.
+
+```python
+squares = [x * x for x in range(5)]
+```
+
+### With condition:
+
+```python
+evens = [x for x in range(10) if x % 2 == 0]
+```
+
+Benefits:
+
+- Cleaner than map + filter
+- More Pythonic
+
+### Dictionary Comprehension
+
+Dictionary comprehension creates dictionaries in a concise way.
+
+```python
+squares = {x: x * x for x in range(5)}
+```
+
+With condition:
+
+```python
+even_squares = {x: x * x for x in range(10) if x % 2 == 0}
+```
+
+### enumerate()
+
+enumerate() returns both the index and value while looping over an iterable.
+
+```python
+names = ["Aryan", "Nutika", "Radha"]
+
+for index, name in enumerate(names):
+    print(index, name)
+```
+
+You can also start indexing from a custom value:
+
+```python
+for i, name in enumerate(names, start=1):
+    print(i, name)
+```
+
+_When to Use What_
+
+- map() → apply a function to all elements
+- filter() → select elements based on a condition
+- List comprehension → preferred for clarity and simplicity
+- Dictionary comprehension → concise dictionary creation
+- enumerate() → access index and value together
