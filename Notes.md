@@ -1893,3 +1893,88 @@ PI = 3.14
 PI = 3.14159265   # Allowed, but discouraged
 There will be no error, because Python is a dynamically typed language.
 ```
+
+### 47. Type Hints and `mypy`
+
+Python is a **dynamically typed language**, which means variable types are checked at runtime, not before execution.  
+However, Python also supports **type hints**, which allow us to specify the expected data types.
+
+Type hints help:
+
+- Improve code readability
+- Catch type-related mistakes early
+- Make code easier to understand and maintain
+
+---
+
+### 48. What Are Type Hints?
+
+Type hints indicate **what type of data a variable, function parameter, or return value is expected to have**.
+
+Example:
+
+```python
+def add(a: int, b: int) -> int:
+    return a + b
+```
+
+Here:
+
+- a: int → a should be an integer
+- b: int → b should be an integer
+- -> int → function should return an integer
+
+**⚠️ Python does not enforce type hints at runtime.**
+
+### Type Hints for Variables
+
+```python
+age: int = 20
+name: str = "Nutika"
+```
+
+**These are hints for developers and tools, not strict rules.**
+
+### 49. What Is mypy?
+
+mypy is a static type checker for Python.
+It checks whether your code follows the type hints you provided.
+
+It helps verify:
+
+- Function arguments
+- Return types
+- Variable assignments
+
+### Installing mypy
+
+```bash
+Copy code
+pip install mypy
+```
+
+### Using mypy
+
+Run this command in the terminal:
+
+```bash
+mypy your_file.py
+```
+
+If the code violates type hints, mypy reports errors before runtime.
+
+Example:
+
+```python
+def greet(name: str) -> None:
+    print("Hello", name)
+
+greet(10)   # mypy will flag this as an error
+```
+
+### Key Points to Remember
+
+- Type hints are optional
+- They do not change how Python runs
+- Tools like mypy use type hints to catch bugs early
+- Widely used in professional and large-scale Python projects
