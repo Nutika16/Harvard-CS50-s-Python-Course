@@ -2052,3 +2052,77 @@ parser.add_argument("name", help="User's name")
 args = parser.parse_args()
 print(f"Hello, {args.name}")
 ```
+
+### 52. Unpacking
+
+Unpacking is a feature in Python that allows us to **assign elements of a collection to multiple variables in a single statement**.
+
+It improves:
+
+- Readability
+- Cleaner assignments
+- Easier handling of sequences and function returns
+
+---
+
+### Sequence Unpacking
+
+```python
+a, b = [1, 2]
+```
+
+- a gets 1
+- b gets 2
+
+**The number of variables must match the number of values.**
+
+### Tuple Unpacking
+
+```python
+x, y = (10, 20)
+```
+
+### Swapping Values Using Unpacking
+
+```python
+x, y = y, x
+```
+
+No temporary variable is required.
+
+### Unpacking with Functions
+
+Functions can return multiple values as a tuple, which can be unpacked:
+
+```python
+def get_coordinates():
+    return 3, 4
+
+x, y = get_coordinates()
+```
+
+### Extended Unpacking (\*)
+
+The \* operator allows collecting multiple values into a list.
+
+```python
+a, *b = [1, 2, 3, 4]
+a → 1
+
+b → [2, 3, 4]
+```
+
+### Unpacking in Loops
+
+```python
+pairs = [(1, 2), (3, 4), (5, 6)]
+
+for x, y in pairs:
+    print(x, y)
+```
+
+### Key Points
+
+- Works with lists, tuples, strings, and other iterables
+- Makes code concise and expressive
+- Commonly used in real-world Python code
