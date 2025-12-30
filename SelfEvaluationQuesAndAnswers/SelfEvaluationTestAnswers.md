@@ -161,3 +161,234 @@ name = "Introduction"
 print(name[:5]) # Intro
 print(name[5:]) or print(name[-7:]) # duction
 ```
+
+# ✅ Assignment 3 — Answer Key
+
+## 🧠 Self-Evaluation Test – Part 3 (Intermediate Python)
+
+---
+
+## 📌 Part A — Concept Answers
+
+### 1. for loop vs while loop
+
+A `for` loop is used when the number of iterations is known in advance, whereas a `while` loop is used when iteration depends on a condition.
+
+---
+
+### 2. List
+
+A list is a data structure used to store a collection of elements.  
+Key properties:
+
+- Lists are mutable
+- Lists are ordered and indexed
+
+---
+
+### 3. Dictionary
+
+A dictionary is a data structure that stores data in key-value pairs.  
+It differs from a list because data is accessed using keys instead of indexes, and dictionaries provide fast lookups by key.
+
+---
+
+### 4. Exception
+
+An exception is a runtime error that occurs during program execution even though the syntax is correct.  
+We use `try` and `except` to catch and handle exceptions gracefully.
+
+---
+
+### 5. Syntax error vs Runtime error
+
+- Syntax error occurs when code violates Python syntax rules (e.g., missing parentheses).
+- Runtime error occurs during execution (e.g., division by zero causing `ZeroDivisionError`).
+
+---
+
+### 6. pass keyword
+
+The `pass` keyword is a null statement used as a placeholder when a statement is syntactically required but no action is needed.
+
+---
+
+### 7. raise keyword
+
+The `raise` keyword is used to manually trigger an exception when a specific condition occurs.
+
+---
+
+### 8. File I/O and `with`
+
+File I/O refers to reading from and writing to files stored on disk.  
+The `with` statement (context manager) is recommended because it ensures automatic file closing and proper resource management.
+
+---
+
+### 9. csv.reader vs csv.DictReader
+
+- `csv.reader` reads rows as lists.
+- `csv.DictReader` reads rows as dictionaries using the header row as keys.
+
+---
+
+### 10. Package vs Module
+
+A module is a single Python file containing code, whereas a package is a directory containing multiple related modules.
+
+---
+
+### 11. Regular Expressions
+
+Regular expressions are patterns used to search, match, and manipulate text.  
+The `re` module provides regex functionality in Python.
+
+---
+
+### 12. Unpacking
+
+Unpacking allows assigning elements of a collection to multiple variables in a single statement.
+
+---
+
+### 13. map()
+
+`map()` applies a function to each element of an iterable and returns a map object.
+
+---
+
+### 14. filter()
+
+`filter()` selects elements from an iterable that satisfy a given condition.
+
+---
+
+### 15. List comprehension
+
+List comprehensions are preferred because they are cleaner, more readable, and more concise.
+
+---
+
+### 16. Dictionary comprehension
+
+Dictionary comprehension provides a concise way to create dictionaries.
+
+---
+
+### 17. enumerate()
+
+`enumerate()` returns both the index and the value while iterating over an iterable.
+
+---
+
+## 📌 Part B — Output Answers
+
+### 18.
+
+```python
+[2, 4, 6, 8]
+```
+
+### 19.
+
+```python
+[2, 4]
+```
+
+### 20.
+
+```python
+[1, 4, 9]
+```
+
+### 21.
+
+```python
+1 Aryan
+2 Nutika
+3 Radha
+```
+
+### 22.
+
+```python
+{'a': 2, 'b': 4}
+```
+
+### 23.
+
+```python
+10
+[20, 30, 40]
+```
+
+### 📌 Part C — Code Answers
+
+24.
+
+```python
+nums = [1, 2, 3, 4, 5, 6]
+even_nums = [num for num in nums if num % 2 == 0]
+print(even_nums)
+```
+
+25.
+
+```python
+def add(*args):
+    return sum(args)
+```
+
+26.
+
+```python
+try:
+    a = int(input("Enter numerator: "))
+    b = int(input("Enter denominator: "))
+    print(a / b)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+```
+
+27.
+
+```python
+count = 0
+
+with open("data.txt") as file:
+    for _ in file:
+        count += 1
+
+print("Total lines:", count)
+```
+
+28.
+
+```python
+
+import re
+
+email = input("Enter email: ")
+
+if re.search(r"^[\w\.-]+@[\w\.-]+\.\w+$", email):
+    print("Valid email")
+else:
+    print("Invalid email")
+```
+
+29. enumerate usage
+
+```python
+items = ["apple", "banana", "cherry"]
+
+for index, item in enumerate(items):
+    print(index, item)
+```
+
+30.
+
+```python
+squares = {x: x * x for x in range(1, 6)}
+print(squares)
+```
