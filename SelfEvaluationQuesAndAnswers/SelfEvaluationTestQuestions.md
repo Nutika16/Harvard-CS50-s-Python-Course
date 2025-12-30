@@ -221,3 +221,160 @@ print(name[::2])
 19. Write code to calculate the median of a list using the statistics module.
 
 20. Write code to slice the string "Introduction" to get "Intro" and "duction" separately.
+
+## Assignment 3
+
+## 🧠 Self-Evaluation Test – Part 3 (Intermediate Python)
+
+This self-evaluation test covers the following topics:
+
+- Loops (`for`, `while`)
+- Lists
+- Dictionaries
+- Exceptions (`try`, `except`, `else`, `finally`)
+- `pass` and `raise`
+- File I/O
+- CSV Handling (`reader`, `DictReader`, `DictWriter`)
+- Libraries and Packages
+- Regular Expressions (`re`)
+- Unpacking
+- `map()` and `filter()`
+- List Comprehension
+- Dictionary Comprehension
+- `enumerate()`
+
+---
+
+## 📌 Part A — Concept Questions
+
+1. What is the difference between a `for` loop and a `while` loop?
+
+2. What is a list?  
+   Mention two key properties of lists in Python.
+
+3. What is a dictionary?  
+   How is it different from a list?
+
+4. What is an exception?  
+   Why do we use `try` and `except`?
+
+5. What is the difference between:
+
+   - Syntax error
+   - Runtime error
+
+6. What is the purpose of the `pass` keyword?
+
+7. When should we use the `raise` keyword?
+
+8. What is File I/O?  
+   Why is the `with` statement recommended while working with files?
+
+9. What is the difference between:
+
+   - `csv.reader`
+   - `csv.DictReader`
+
+10. What is a package?  
+    How is it different from a module?
+
+11. What are regular expressions?  
+    Why do we use the `re` module?
+
+12. What is unpacking in Python?
+
+13. What does `map()` do?  
+    What type of object does it return?
+
+14. What does `filter()` do?
+
+15. Why are list comprehensions preferred over `map()` and `filter()` in many cases?
+
+16. What is dictionary comprehension?
+
+17. What does `enumerate()` return?
+
+---
+
+## 📌 Part B — Predict the Output
+
+18. What will this print?
+
+```python
+numbers = [1, 2, 3, 4]
+result = list(map(lambda x: x * 2, numbers))
+print(result)
+```
+
+19. What will this print?
+
+```python
+numbers = [1, 2, 3, 4, 5]
+result = list(filter(lambda x: x % 2 == 0, numbers))
+print(result)
+```
+
+20. What will this print?
+
+```python
+nums = [1, 2, 3]
+squares = [n * n for n in nums]
+print(squares)
+```
+
+21. What will this print?
+
+```python
+names = ["Aryan", "Nutika", "Radha"]
+
+for i, name in enumerate(names, start=1):
+    print(i, name)
+```
+
+22. What will this print?
+
+```python
+data = {"a": 1, "b": 2}
+new_data = {k: v * 2 for k, v in data.items()}
+print(new_data)
+```
+
+23. What will this print?
+
+```python
+a, *b = [10, 20, 30, 40]
+print(a)
+print(b)
+```
+
+### 📌 Part C — Write the Code
+
+24. Write a program that:
+    Takes a list of numbers
+    Uses list comprehension
+    Returns a new list containing only even numbers
+
+25. Write a function that:
+    Accepts any number of positional arguments
+    Returns their sum
+    (Hint: use \*args)
+
+26. Write code to:
+    Read a text file
+    Count the number of lines in the file
+
+27. Write a program that:
+    Uses re
+    Validates whether a user-entered email is valid or not
+
+28. Write code that:
+    Uses enumerate()
+    Prints each item of a list along with its index
+
+29. Write a program that:
+    Uses dictionary comprehension
+    Creates a dictionary of numbers and their squares from 1 to 5
+
+30. Write a program that:
+    Uses try / except
+    Handles division by zero gracefully
